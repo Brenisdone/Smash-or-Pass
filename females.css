@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    background-image: url(f_imgs/bj.png);
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    background-color: rgb(255, 0, 153);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px red;
+    color: rgb(250, 197, 238);
+    text-shadow: 2px 2px 5px pink;
+}
+
+.box{
+    background-color: rgba(224, 115, 137, 0.711);
+    margin: 25px;
+}
+
+.gallery{
+    background-color:  rgb(235, 76, 108);
+    display: inline-block;
+    border: 5px solid rgb(225, 48, 83);
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    transition: box-shadow 0.3s ease;
+}
+
+#one{
+    animation: slideRight 1s ease; 
+}
+#two{
+    animation: slideLeft 1s ease;
+}
+
+.gallery a{
+    text-decoration: none;
+}
+
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.gallery:hover{
+    border-color: red;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+hr{
+    height: 5px;
+    background-color: black;
+}
+
+
+.icons{
+    text-align: center;
+}
+
+.icons i:hover{
+    color: hsl(323, 100%, 77%);
+}
+
+
+.fa-solid.fa-heart.fa-3x:active{
+    color: red;
+}
+
+.fa-duotone.fa-solid.fa-thumbs-down.fa-3x:active{
+    color: rgb(83, 83, 213);
+}
+
+#passText{
+    position: absolute;
+    transform: translate(0%,70%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    color: whitesmoke;
+    opacity: 0;
+    background-color: rgba(128, 128, 128, 0.200);
+    width: 300px;
+    transition: opacity 0.5s ease;
+}
+
+
+#passText.show {
+    opacity: 1;
+}
+
+.icons i{
+    padding-right: 2.5px;
+    padding-left: 2.5px;
+}
+
+.fa-brands.fa-youtube.fa-3x:not(:hover){
+    color: rgb(234, 41, 41);
+}
+
+.about_me{
+    display: inline-block;
+    background-color: rgb(244, 215, 250);
+    border: 3px solid rgb(223, 91, 91);;
+    border-radius: 5px;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(300%) rotateY(360deg);}
+}
+
+@keyframes slideRight{
+    from{transform: translateX(-300%) rotateY(360deg);}
+}

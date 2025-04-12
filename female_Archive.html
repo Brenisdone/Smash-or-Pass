@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="females.css">
+    <link rel="Stylesheet" href="pagination.css">
+    <script src="https://kit.fontawesome.com/ca535dbf7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="center">
+        <h1>I Would Smash Gallery</h1>
+    <div>
+    <div class="box">
+    <div class="gallery" id="one">
+            <p id="passText">pass</p>
+            <a target="_blank" href="f_imgs/chloe-uncharted.jpg">
+                <img src="f_imgs/chloe-uncharted.jpg" alt="chloe" width="300px">
+            </a>
+            <div class="description">
+                Chloe From Uncharted
+            </div>
+            <div class="icons">
+                <a target="_blank" href="https://uncharted.fandom.com/wiki/Chloe_Frazer">
+                    <i class="fa-solid fa-heart fa-3x"></i>
+                </a>
+                <i class="fa-duotone fa-solid fa-thumbs-down fa-3x" id="dislikeBtn"></i>
+            </div>
+    </div>
+
+    <div class="gallery" id="two">
+        <a target="_blank" href="f_imgs/jill-valentine.jpg">
+            <img src="f_imgs/jill-valentine.jpg" alt="jill">
+            <div class="description">
+                jill valentine from resident evil series
+            </div>
+            <div class="icons">
+                <a target="_blank" href="https://residentevil.fandom.com/wiki/Jill_Valentine">
+                    <i class="fa-solid fa-heart fa-3x"></i>
+                </a>
+                <i class="fa-duotone fa-solid fa-thumbs-down fa-3x"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="gallery" id="one">
+        <a target="_blank" href="f_imgs/oni.jpg">
+            <img src="f_imgs/oni.png" alt="oni" >
+            <div class="description">
+                Mai Hasegawa from the ps2 era game "Oni"
+            </div>
+            <div class="icons">
+                <a target="_blank" href="https://oni.fandom.com/wiki/Mai_Hasegaw">
+                    <i class="fa-solid fa-heart fa-3x"></i>
+                </a>
+                <i class="fa-duotone fa-solid fa-thumbs-down fa-3x"></i>
+            </div>
+        </a>
+    </div>
+
+    <div class="gallery" id="two">
+        <a target="_blank" href="f_imgs/oni.jpg">
+            <img src="f_imgs/viper.jpg" alt="viper">
+            <div class="description">
+                Viper from popular multiplayer game "Valorant"
+            </div>
+            <div class="icons">
+                <a target="_blank" href="https://valorant.fandom.com/wiki/Viper">
+                    <i class="fa-solid fa-heart fa-3x"></i>
+                </a>
+                <i class="fa-duotone fa-solid fa-thumbs-down fa-3x"></i>
+            </div>
+        </a>
+    </div>
+    </div>
+    <hr>
+    <div class="about_me">
+    <div class="icons">
+        <a href="https://www.youtube.com/@BreadCrumbs-v1h" target="_blank">
+            <i class="fa-brands fa-youtube fa-3x"></i>
+        </a>
+        <a href="https://x.com/Brenisdone" target="_blank">
+            <i class="fa-brands fa-x-twitter fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/brenisdone/" target="_blank">
+            <i class="fa-brands fa-instagram fa-spin fa-3x"></i>
+        </a>
+    </div>
+    <footer>
+        <div class="pagination" style="background-color: rgb(181, 54, 54);">
+        <a href="lists.html"><</a>
+        <a href="applying_Css.html">1</a>
+        <a href="combinators.html">2</a>
+        <a href="font.html">3</a>
+        <a href="form.html">4</a>
+        <a href="header_main_footer.html">5</a>
+        <a href="lists.html">6</a>
+        <a href="lyrics.html">7</a>
+        <a href="female_Archive.html" class="active">8</a>
+        <a href="female_Archive.html">></a>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const dislikeBtn = document.getElementById('dislikeBtn');
+        const passText = document.getElementById('passText');
+      
+        dislikeBtn.addEventListener('click', () => {
+          passText.classList.add('show');
+        });
+    </script>
+
+</body>
+</html>
